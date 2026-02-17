@@ -1,0 +1,21 @@
+{
+  "name"            : "com.core.ui",
+  "displayName"     : "com.core.ui",
+  "version"         : "0.1.0",
+  "unity"           : "6000.3",
+  "unityRelease"    : "7f1",
+  "description"     : "UI package provides a clean way of showing popups and overlay UIs.",
+  "author"          : {
+	"name" : "Talha Cagatay ISIK",
+	"url"  : "http://www.example.com",
+	"email": "isiktalhacagatay@gmail.com"
+  },
+  "changelogUrl"    : "https://example.com/changelog.html",
+  "documentationUrl": "https://example.com/",
+  "licensesUrl"     : "https://example.com/licensing.html",
+  "dependencies"    : {
+	"com.core.dotween"    : "0.1.0",
+	"com.core.initializer": "0.1.0",
+	"com.cysharp.unitask" : "2.5.10"
+  }
+}
