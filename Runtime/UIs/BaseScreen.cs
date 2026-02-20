@@ -8,7 +8,7 @@ namespace com.core.ui
     public abstract class BaseScreen : MonoBehaviour, IUI
     {
         public event Action<IUI> Showed;
-        public event Action<IUI> Hided;
+        public event Action<IUI> Hidden;
 
         public virtual UniTask ShowAsync()
         {
@@ -20,10 +20,10 @@ namespace com.core.ui
         public UniTask HideAsync()
         {
             gameObject.SetActive(false);
-            Hided?.Invoke(this);
+            Hidden?.Invoke(this);
             return UniTask.CompletedTask;
         }
 
-        private void OnDestroy() => Hided?.Invoke(this); // workaround for instantiated and destroyed UIs
+        private void OnDestroy() => Hidden?.Invoke(this); // workaround for instantiated and destroyed UIs
     }
 }

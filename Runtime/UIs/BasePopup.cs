@@ -10,7 +10,7 @@ namespace com.core.ui
     {
         public event Action<IUI> StartedShowing;
         public event Action<IUI> Showed;
-        public event Action<IUI> Hided;
+        public event Action<IUI> Hidden;
 
         [SerializeField] private float   openingTime  = 0.35f;
         [SerializeField] private float   closingTime  = 0.25f;
@@ -52,7 +52,7 @@ namespace com.core.ui
         {
             transform.SetAsFirstSibling();
             gameObject.SetActive(false);
-            Hided?.Invoke(this);
+            Hidden?.Invoke(this);
             utcs.TrySetResult();
         }
 
