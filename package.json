@@ -1,7 +1,7 @@
 {
   "name"            : "com.core.ui",
   "displayName"     : "com.core.ui",
-  "version"         : "0.1.1",
+  "version"         : "0.1.2",
   "unity"           : "6000.3",
   "unityRelease"    : "7f1",
   "description"     : "UI package provides a clean way of showing popups and overlay UIs.",
@@ -14,7 +14,7 @@
   "documentationUrl": "https://example.com/",
   "licensesUrl"     : "https://example.com/licensing.html",
   "dependencies"    : {
-	"com.core.dotween"    : "0.1.0",
+	"com.core.dotween"    : "0.1.1",
 	"com.core.initializer": "0.1.0",
 	"com.cysharp.unitask" : "2.5.10"
   }
